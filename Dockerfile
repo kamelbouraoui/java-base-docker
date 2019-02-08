@@ -5,14 +5,14 @@ FROM debian:stretch-slim
 # Setup JAVA_HOME
 ENV JAVA_HOME="/usr/lib/jvm/default-jvm"
 
-#https://download.oracle.com/otn-pub/java/jdk/8u191-b12/2787e4a523244c269598db4e85c51e0c/jdk-8u191-linux-x64.tar.gz
+#//https://download.oracle.com/otn-pub/java/jdk/8u201-b09/42970487e3af4f5aa5bca3f542482c60/jdk-8u201-linux-x64.tar.gz
 
 # Install Oracle Server JRE (Java SE Runtime Environment) 8u172 with Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files for JDK/JRE 8
 RUN JAVA_VERSION=8 && \
-    JAVA_UPDATE=191 && \
-    JAVA_BUILD=12 && \
-    JAVA_PATH=2787e4a523244c269598db4e85c51e0c && \
-    JAVA_SHA256_SUM=8d6ead9209fd2590f3a8778abbbea6a6b68e02b8a96500e2e77eabdbcaaebcae && \
+    JAVA_UPDATE=201 && \
+    JAVA_BUILD=09 && \
+    JAVA_PATH=42970487e3af4f5aa5bca3f542482c60 && \
+    JAVA_SHA256_SUM=0da7f9cfe63daf41e84783825efee26d0e4e7c2130e2d7a651002d3c94078b8d && \
     JCE_SHA256_SUM=f3020a3922efd6626c2fff45695d527f34a8020e938a49292561f18ad1320b59 && \
     apt-get update && \
     apt-get -y install wget unzip && \
